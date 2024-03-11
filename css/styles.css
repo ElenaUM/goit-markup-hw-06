@@ -38,37 +38,75 @@ img {
 }
 
 
-
-.page-header-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 15px;
-}
-
 .page-header {
         border-bottom: 1px solid #e7e9fc;
 
         box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-         0px 1px 1px rgba(46, 47, 66, 0.16),
-          0px 1px 6px rgba(46, 47, 66, 0.08);
-        
+                0px 1px 1px rgba(46, 47, 66, 0.16),
+                0px 1px 6px rgba(46, 47, 66, 0.08);
+
 }
 
-.container {
+
+
+/* .container {
         width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
         margin-left: auto;
         margin-right: auto;
+} */
+
+.container {
+        max-width: 320px;
+        padding-right: 16px;
+        padding-left: 16px;
+margin-left: auto;
+        margin-right: auto;
+
 }
+
+@media screen and (min-width: 768px) {
+.containeri {
+         max-width: 768px;
+        }
+
+
+}
+
+@media screen and (min-width: 1158px) {
+.container {
+        max-width: 1158px;
+        padding-right: 15px;
+        padding-left: 15px;
+        }
+}
+
+
+
+.page-header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+
+
+/* 
+.page-header-container {
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        justify-content: space-between;
+} */
+
 
 
 .page-nav {
         display: flex;
         align-items: center;
        
-}
+} 
 
 
 .logo {
@@ -79,7 +117,14 @@ img {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
-        margin-right: 76px
+        /* margin-right: 76px */
+
+
+
+
+
+
+        padding: 17 0; 
 }
 
 .logo-part {
@@ -95,11 +140,23 @@ img {
 }
 
 
-.menu {
+/* .menu {
         display: flex;
         gap: 40px;
 
+} */
+
+.menu,
+.menu-address {
+        display: none;
 }
+
+
+
+
+
+
+
 
 .meny-item {
 
@@ -116,7 +173,7 @@ img {
 
 
 
-.menu-link{
+/* .menu-link{
         position: relative;
 
         font-weight: 500;
@@ -166,23 +223,41 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
         color: #404bbf;
 }
+ */
 
-.page-address { 
+
+
+
+/* .page-address { 
         font-style: normal;
         
-}
+} */
 
 
-.menu-address {
+
+
+
+/* .menu-address {
         display: flex;
         column-gap: 40px;
         gap: 40px;
          transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
         
-}
+} */
 
 
-.address-link {
+
+
+
+
+
+
+
+
+
+
+
+/* .address-link {
         position: relative;
         
         font-weight: 400;
@@ -197,7 +272,143 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .address-link:focus {
     color: #404bbf;
 
+} */
+
+
+.open-menu-btn {
+        padding: 0;
+        line-height: 0;
+       background-color: transparent;
+       cursor: pointer;
+       border: none;
+        
 }
+
+
+
+
+
+@media screen and (min-width: 768px) {
+.menu {
+        display: flex;
+        gap: 40px;
+        }
+.page-address {
+        display: block;
+}
+.open-menu-btn {
+        display: none;
+}
+
+.logo {
+        margin-right: 120px;
+}
+
+.menu {
+        display: flex;
+        gap: 40px;
+}
+
+.menu-link {
+        position: relative;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        padding: 24px 0;
+        display: block;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+.current {
+        position: relative;
+
+        color: #404bbf;
+}
+
+.current::after {
+
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        background-color: #404BBF;
+        border-radius: 2px;
+        height: 4px;
+        width: 100%;
+
+}
+
+
+.menu-link:hover {
+        color: #404bbf;
+}
+
+.menu-link:focus {
+        color: #404bbf;
+}
+
+
+.current.active {
+
+        color: #404bbf;
+}
+
+}
+.page-address {
+        font-style: normal;
+
+}
+
+.menu-address {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+.address-link {
+        position: relative;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-link:hover,
+.address-link:focus {
+        color: #404bbf;
+
+}
+
+
+
+@media screen and (min-width: 1158px) {
+        .logo {
+                margin-right: 76px;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .section-hero {
