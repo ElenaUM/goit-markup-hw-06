@@ -47,21 +47,11 @@ img {
 
 }
 
-
-
-/* .container {
-        width: 1158px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-left: auto;
-        margin-right: auto;
-} */
-
 .container {
-        max-width: 320px;
+        min-width: 320px;
         padding-right: 16px;
         padding-left: 16px;
-margin-left: auto;
+        margin-left: auto;
         margin-right: auto;
 
 }
@@ -82,15 +72,279 @@ margin-left: auto;
         }
 }
 
+/* ====================      ЗАГАЛЬНІ СТИЛІ    ===================== */
 
 
+
+/* ====================        ХЕДЕР mobile menu      ============================*/
 .page-header-container {
+        min-width: 320px;
+        padding-right: 16px;
+        padding-left: 16px;
         display: flex;
         align-items: center;
         justify-content: space-between;
 }
 
+.logo {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #4d5ae5;
 
+
+}
+
+.logo-part {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #2e2f42;
+
+
+}
+
+.menu {
+        display: none;
+}
+
+.menu-address {
+        display: none;
+}
+
+
+.open-menu-btn {
+        padding-right: 16px;
+        width: 24px;
+        height: 24px;
+        line-height: 0;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        justify-content: space-between;
+
+}
+
+
+/* =============.       ХЕДЕР ПЛАНШЕТ.    ==================== */
+
+
+
+@media screen and (min-width: 768px) {
+.page-header-container {
+                min-width: 768px;
+        }
+
+.page-nav {
+        display: flex;
+        align-items: center;
+
+}
+
+.logo {
+       
+        padding-top: 24px;
+        margin-right: 120px;
+        }
+
+.open-menu-btn {
+        display: none;
+}
+.menu {
+        display: flex;
+        gap: 40px;
+        }
+
+
+
+        .menu-link {
+                position: relative;
+
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: 0.02em;
+                color: #2e2f42;
+                padding-top: 24px;
+                margin-bottom: 24px;
+                display: block;
+                transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+        }
+
+
+        .current {
+                position: relative;
+
+                color: #404bbf;
+        }
+
+        .current::after {
+
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -1px;
+                background-color: #404BBF;
+                border-radius: 2px;
+                height: 4px;
+                width: 100%;
+
+        }
+
+.meny-item {
+
+        padding: 24px 0;
+        display: block;
+        gap: 40px;
+
+}
+
+.meny-item:last-child {
+        margin-right: 0;
+}
+
+.menu-link {
+        position: relative;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        padding: 24px 0;
+        display: block;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+        .menu-link:hover {
+                color: #404bbf;
+        }
+
+        .menu-link:focus {
+                color: #404bbf;
+        }
+
+
+        .current.active {
+
+                color: #404bbf;
+        }
+
+
+.page-address {
+        font-style: normal;
+        display: block;
+}
+
+.menu-address {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+}
+
+.address-link {
+        position: relative;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.address-link:hover,
+.address-link:focus {
+        color: #404bbf;
+
+}
+
+}
+
+/* =================        ХЕДЕР НОУТ.      ================= */
+
+
+@media screen and (min-width: 1158px) {
+
+        .page-header-container {
+min-width: 1158px;
+
+        }
+
+
+.container {
+        min-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+} 
+
+
+.page-header-container {
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        justify-content: space-between;
+} 
+
+
+
+.page-nav {
+        display: flex;
+        align-items: center;
+       
+} 
+   .logo {
+           margin-right: 76px;
+   }
+
+
+
+.menu-address {
+        display: flex;
+        column-gap: 40px;
+        gap: 40px;
+         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+        
+} 
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====================================================================== */
+
+/* .container {
+        width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+} */
 
 /* 
 .page-header-container {
@@ -101,44 +355,12 @@ margin-left: auto;
 } */
 
 
-
+/* 
 .page-nav {
         display: flex;
         align-items: center;
        
-} 
-
-
-.logo {
-        font-family: "Raleway", sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #4d5ae5;
-        /* margin-right: 76px */
-
-
-
-
-
-
-        padding: 17 0; 
-}
-
-.logo-part {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #2e2f42;
-   
-    
-}
-
+}  */
 
 /* .menu {
         display: flex;
@@ -146,19 +368,7 @@ margin-left: auto;
 
 } */
 
-.menu,
-.menu-address {
-        display: none;
-}
-
-
-
-
-
-
-
-
-.meny-item {
+/* .meny-item {
 
         padding: 24px 0;
         display: block;
@@ -166,11 +376,9 @@ margin-left: auto;
      
 }
 
-
 .meny-item:last-child {
         margin-right: 0;
-}
-
+} */
 
 
 /* .menu-link{
@@ -186,7 +394,6 @@ margin-left: auto;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
        
 }
-
 
 .current {
         position: relative;
@@ -207,8 +414,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 } 
 
-
-
 .menu-link:hover {
     color: #404bbf;
 } 
@@ -217,25 +422,16 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #404bbf;
 }
 
-
-
 .current.active {
         
         color: #404bbf;
 }
  */
 
-
-
-
 /* .page-address { 
         font-style: normal;
         
 } */
-
-
-
-
 
 /* .menu-address {
         display: flex;
@@ -244,18 +440,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
          transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
         
 } */
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* .address-link {
         position: relative;
@@ -274,7 +458,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 } */
 
-
+/* 
 .open-menu-btn {
         padding: 0;
         line-height: 0;
@@ -282,126 +466,19 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
        cursor: pointer;
        border: none;
         
-}
+} */
 
-
-
-
-
-@media screen and (min-width: 768px) {
-.menu {
-        display: flex;
-        gap: 40px;
-        }
-.page-address {
-        display: block;
-}
+/* @media  screen and (max-width: 767px) {
 .open-menu-btn {
         display: none;
 }
-
-.logo {
-        margin-right: 120px;
-}
-
-.menu {
-        display: flex;
-        gap: 40px;
-}
-
-.menu-link {
-        position: relative;
-
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
-        padding: 24px 0;
-        display: block;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-
-.current {
-        position: relative;
-
-        color: #404bbf;
-}
-
-.current::after {
-
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -1px;
-        background-color: #404BBF;
-        border-radius: 2px;
-        height: 4px;
-        width: 100%;
-
-}
-
-
-.menu-link:hover {
-        color: #404bbf;
-}
-
-.menu-link:focus {
-        color: #404bbf;
-}
-
-
-.current.active {
-
-        color: #404bbf;
-}
-
-}
-.page-address {
-        font-style: normal;
-
-}
-
-.menu-address {
-display: flex;
-flex-direction: column;
-gap: 12px;
-}
-
-.address-link {
-        position: relative;
-
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.16;
-        letter-spacing: 0.02em;
-        color: #434455;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address-link:hover,
-.address-link:focus {
-        color: #404bbf;
-
-}
-
-
-
-@media screen and (min-width: 1158px) {
-        .logo {
-                margin-right: 76px;
-        }
-}
+} */
 
 
 
 
 
-
-
-
+/* ================   ХЕДЕР mobile-menu      =================*/
 
 
 
@@ -1269,4 +1346,121 @@ border: none;
 .contacts-form-submit-btn:focus {
        background: #404BBF;
        border-color: #404BBF;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =======       mobile-menu OPEN       ============*/
+.mobile-menu-close {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999999999;
+        width: 100%;
+        height: 100%;
+        background-color: #e5e5e5;
+
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.mobile-menu-close.is-open {
+        opacity: 1;
+        visibility: visible;
+}
+
+.mobile-menu-container {
+        position: relative;
+        width: 320px;
+        height: 640px;
+        /* padding-top: 72px;
+        padding-left: 16px; */
+}
+
+.mobile-menu-close-btn {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 24px;
+        right: 16px;
+        background-color: transparent;
+        border: none;
+        padding: 8;
+        line-height: 0;
+        fill: #2E2F42;
+}
+
+.mobile-menu-close-icon {
+        fill: #2e2f42;
+}
+
+.mobile-nav-menu-item {
+        width: 151px;
+        height: 200px;
+        padding-top: 72px;
+        padding-left: 16px;
+        margin-bottom: 168px;
+}
+
+
+
+.mobile-nav-item {
+        display: block;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        margin-bottom: 40px;
+        color: #2e2f42;
+}
+
+
+.mobile-nav-item:hover,
+.mobile-nav-item:focus {
+        color: #404bbf;
+}
+
+.mobile-menu-address-link {
+        width: 193px;
+        height: 72px;
+        margin-bottom: 48px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #434455;
+}
+
+.mobile-menu-address-link:hover,
+.mobile-menu-address-link:focus {
+        color: #404bbf;
+}
+
+
+
+.container-mobile-menu-icons {
+        width: 280px;
+        height: 40px;
+
+        padding-bottom: 40px;
+        margin-right: 40px;
+}
+
+
+.mobile-menu-icons {
+        display: flex;
+        background-color: ;
+        fill: ;
 }
