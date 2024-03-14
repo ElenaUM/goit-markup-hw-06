@@ -49,10 +49,11 @@ img {
 
 .container {
         min-width: 320px;
+        max-width: 767px;
         padding-right: 16px;
         padding-left: 16px;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: auto; 
 
 }
 
@@ -78,9 +79,7 @@ img {
 
 /* ====================        ХЕДЕР mobile menu      ============================*/
 .page-header-container {
-        min-width: 320px;
-        padding-right: 16px;
-        padding-left: 16px;
+        
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -94,7 +93,7 @@ img {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
-
+        margin-right: 149px;
 
 }
 
@@ -106,8 +105,7 @@ img {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #2e2f42;
-
-
+         
 }
 
 .menu {
@@ -2750,7 +2748,7 @@ border: none;
         z-index: 9999999999;
         width: 100%;
         height: 100%;
-        background-color: #e5e5e5;
+       
 
         opacity: 0;
         visibility: hidden;
@@ -2767,8 +2765,7 @@ border: none;
         position: relative;
         width: 320px;
         height: 640px;
-        /* padding-top: 72px;
-        padding-left: 16px; */
+     
 }
 
 .mobile-menu-close-btn {
@@ -2788,12 +2785,16 @@ border: none;
         fill: #2e2f42;
 }
 
+
+
+
 .mobile-nav-menu-item {
         width: 151px;
         height: 200px;
         padding-top: 72px;
         padding-left: 16px;
         margin-bottom: 168px;
+       
 }
 
 
@@ -2835,16 +2836,42 @@ border: none;
 
 
 .container-mobile-menu-icons {
+       
         width: 280px;
         height: 40px;
 
         padding-bottom: 40px;
-        margin-right: 40px;
+        margin-top: 48px;
 }
 
 
 .mobile-menu-icons {
         display: flex;
-        background-color: ;
-        fill: ;
+       
 }
+
+.mobile-menu-item-icons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: #4D5AE5;
+                fill: #FFFFFF;
+                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                padding: 8px;
+                margin-right: 40px;
+}
+
+
+  .mobile-menu-item-icons:hover,
+  .mobile-menu-item-icons:focus {
+          background-color: #404BBF;
+
+  }
+
+  .mobile-link-icons {
+        align-items: center;     
+          fill: #f4f4fd;
+  }
