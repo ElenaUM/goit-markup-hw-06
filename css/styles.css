@@ -239,7 +239,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/hero.jpg);
   /* зображення для моб 1х */
   background-repeat: no-repeat;
   background-position: center;
@@ -257,7 +257,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
+      url(../images/hero@2x.jpg);
     /* зображення для моб 2х */
   }
 }
@@ -309,7 +309,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
+      url(../images/herotab.jpg);
     /* зображення для планш 1х */
   }
 
@@ -321,7 +321,7 @@ img {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/people-office.jpg);
+        url(../images/herotab@2x.jpg);
       /* зображення для планш 2х */
     }
   }
@@ -343,7 +343,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
+      url(../images/herodesk.jpg);
     /* зображення для ноут 1х */
   }
 
@@ -355,7 +355,7 @@ img {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/people-office.jpg);
+        url(../images/herodesk@2x.jpg);
       /* зображення для ноут 2х */
     }
   }
