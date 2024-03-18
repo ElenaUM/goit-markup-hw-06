@@ -141,9 +141,14 @@ img {
   .open-menu-btn {
     display: none;
   }
+
   .menu {
     display: flex;
     gap: 40px;
+  }
+
+  .mobile-menu-close {
+    display: none;
   }
 
   .current::after {
@@ -898,15 +903,11 @@ img {
 
 .modal {
   position: absolute;
-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* width: 408px; */
   width: 288px;
-  /* min-height: 584px; */
-  padding: 72px 24px 24px 24px;
-
+  padding: 72px 16px 24px 16px;
   border-radius: 4px;
   fill: #fcfcfc;
   background: #fcfcfc;
@@ -1073,9 +1074,11 @@ img {
 }
 
 .contacts-form-checkbox-lable {
+  display: flex;
+  align-items: center;
+
   font-weight: 400;
   font-size: 12px;
-
   line-height: 14px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -1090,6 +1093,7 @@ img {
   height: 16px;
   border-radius: 2px;
   margin-right: 8px;
+  flex-shrink: 0;
   border: 1px solid rgba(46, 47, 66, 0.4);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
